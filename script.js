@@ -177,7 +177,7 @@ function red(e){
   alchemist.textContent = "Alchemist";
   alchemistimage.src="alchemist.jpeg";
   axe.textContent = "Axe";
-  axeimage.src="axe.png";
+  axeimage.src="/image/axe.png";
   beastmaster.textContent = "Beastmaster";
   beastmasterimage.src="image/strength/Beastmaster.jpeg";
   brewmaster.textContent = "Brewmaster";
