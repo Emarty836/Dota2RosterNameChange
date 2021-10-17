@@ -156,8 +156,8 @@ sniperimage.src="Torbjorn.png";
 
 crystalmaidenimage.src="elsa.jpeg";
 enchantressimage.src="bambi.jpeg";
-keeper.textContent="Merlin";
-ogreimage.textContent="Majin-Buu";
+keeperimage.src="merlin.jpeg";
+ogreimage.src="majinbuu.jpeg";
 stormimage.src="genie.jpeg";
 
 }
