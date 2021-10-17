@@ -144,7 +144,7 @@ omniknight.textContent="Obi-Wan-Kenobi";
 dragon_knightimage.src="image/strength alt/Dota-anime-Dragons-Blood-Dragon-Knight-Netflix.jpeg";
 //dawnbreaker.textContent="Big Titty Sun Goddess"
 phoenix.textContent="Mr. B";
-pudge.textContent="Roadhog";
+pudgeimage.src="image/strength alt/roadhog.jpeg";;
 tinyimage.src="image/strength alt/rock.jpeg";
 
 
