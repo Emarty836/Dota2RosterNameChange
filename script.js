@@ -173,9 +173,9 @@ function red(e){
   onSwitch.classList.remove('green');
   title.textContent="DOTA 2 ROSTER";
   abaddon.textContent = "Abaddon";
-  abaddonimage.src="image/strength/abaddon.jpeg";
+  abaddonimage.src="abaddon.jpeg";
   alchemist.textContent = "Alchemist";
-  alchemistimage.src="image/strength/alchemist.jpeg";
+  alchemistimage.src="alchemist.jpeg";
   axe.textContent = "Axe";
   axeimage.src="image/strength/axe.png";
   beastmaster.textContent = "Beastmaster";
