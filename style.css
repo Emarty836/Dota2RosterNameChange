@@ -1,0 +1,154 @@
+body{margin: auto 0;
+
+}
+
+#project{
+  padding:10px;
+}
+
+#title{
+  color:white;
+  width:100%;
+  height:180px;
+  background: black;
+  margin:auto 0;
+  padding:0;
+  text-align: center;
+  text-transform: uppercase;
+  position:fixed;
+  z-index:9;
+}
+
+#lower{
+  text-transform: capitalize;
+}
+
+.detail{
+  padding-top:10px;
+  text-align: left;
+}
+
+
+
+.heroes{
+  /*background: linear-gradient(red 0% 20%, green 35%,  blue 70%, blue 100%);*/
+  background: linear-gradient(#8B0000 35%, green 45%, #016e02 65%, #0069ff 75%);
+  background-repeat:no-repeat;
+  height:2100px;
+  width:1825px;
+}
+
+.button{
+  display:flex;
+  justify-content: center;
+}
+
+#purpose{
+  display:flex;
+  justify-content:space-around;
+  padding:0;
+}
+
+
+.switch{
+  width:60px;
+  height:40px;
+}
+#one{}
+
+.green{
+    background:green;
+  }
+
+  .red{
+    background:red;
+  }
+
+.heroes{
+padding:40px 40px;
+}
+
+
+img{
+  height:70%;
+  width:100%;
+  border-bottom:1px solid black;
+}
+
+.sheroes:hover, .aheroes:hover, .iheroes:hover{
+  background:black;
+  color:white;
+  cursor:pointer;
+  border:3px white solid;
+}
+
+
+#strength{
+      display:flex;
+      flex-direction:row;
+      flex-wrap: wrap;
+      position:absolute;
+      top:220px;
+      width:1800px;
+      margin:10px;
+
+}
+
+
+
+#agility{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  position:absolute;
+  top:900px;
+  width:1800px;
+  margin:10px;
+}
+
+#intelligence{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  position:absolute;
+  top:1500px;
+  width:1800px;
+  margin:10px;
+}
+
+
+.sheroes{
+  width:100px;
+  height:150px;
+  background:grey;
+  text-align:center;
+  margin: 7px;
+  border: 3px solid black;
+}
+
+  .aheroes{
+    width:100px;
+    height:150px;
+    background:grey;
+    margin:7px;
+    text-align:center;
+    border: 3px solid black;
+  }
+
+  .iheroes{
+    width:100px;
+    height:150px;
+    background:grey;
+    margin:7px;
+    text-align:center;
+    border: 3px solid black;
+  }
+
+  .bigger{
+    width:150px;
+    height:200px;
+    font-size:20px;
+    z-index:1;
+    margin:-18.5px;
+    transition: .5s;
+  }
