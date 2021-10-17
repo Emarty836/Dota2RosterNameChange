@@ -120,7 +120,7 @@ function green(e){
   //abaddon.textContent = "gay";
   //abaddonimage.src="image/elsa.jpeg";
   //alchemist.textContent = "Shrek";
-  alchemistimage.src="image/strength alt/shrek.jpeg";
+  alchemistimage.src="shrek.jpeg";
   //axe.textContent = "Shrek";
 //  axeimage.src="image/strength alt/shrek.jpeg";
 //  beastmaster.textContent = "Shrek";
@@ -173,11 +173,11 @@ function red(e){
   onSwitch.classList.remove('green');
   title.textContent="DOTA 2 ROSTER";
   abaddon.textContent = "Abaddon";
-  abaddonimage.src="image/strength/abaddon.jpeg";
+  abaddonimage.src="abaddon.jpeg";
   alchemist.textContent = "Alchemist";
-  alchemistimage.src="image/strength/alchemist.jpeg";
+  alchemistimage.src="alchemist.jpeg";
   axe.textContent = "Axe";
-  axeimage.src="image/strength/axe.png";
+  axeimage.src="axe.png";
   beastmaster.textContent = "Beastmaster";
   beastmasterimage.src="image/strength/Beastmaster.jpeg";
   brewmaster.textContent = "Brewmaster";
