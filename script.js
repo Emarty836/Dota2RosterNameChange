@@ -249,25 +249,25 @@ function red(e){
 /*---------------------------------Agilities--------------------------*/
 
 
-bounty_hunter.src="image/agility/Bounty_Hunter_icon.png";
+bounty_hunter.src="Bounty_Hunter_icon.png";
 hoodwink.textContent="Hoodwink";
 juggernaut.textContent="Juggernaut";
-lonedruid_image.src="image/agility/Lone_Druid_icon.png";
-meepoimage.src="image/agility/Meepo_icon.png";
+lonedruid_image.src="Lone_Druid_icon.png";
+meepoimage.src="Meepo_icon.png";
 monkeyking.textContent="Monkey King";
-nagasirenimage.src="image/agility/Naga_Siren_icon.png";
-pangolierimage.src="image/agility/Pangolier_icon.png";
-sniperimage.src="image/agility/Sniper_icon.png";
+nagasirenimage.src="Naga_Siren_icon.png";
+pangolierimage.src="Pangolier_icon.png";
+sniperimage.src="Sniper_icon.png";
 
 /*----------------------------Intelligence------------------------------*/
 
-crystalmaidenimage.src="image/intelligence/Crystal_Maiden_icon.png";
-enchantressimage.src="image/intelligence/Enchantress_icon.png";
+crystalmaidenimage.src="Crystal_Maiden_icon.png";
+enchantressimage.src="Enchantress_icon.png";
 enigma.textContent="Enigma";
 keeper.textContent="Keeper of the Light";
 ogreimage.textContent="Ogre Maji";
-stormimage.src="image/intelligence/Storm_Spirit_icon.png";
-techies.src="image/intelligence/Techies_icon.png";
+stormimage.src="Storm_Spirit_icon.png";
+techies.src="Techies_icon.png";
 zeus.textContent = "Zeus";
 }
 
