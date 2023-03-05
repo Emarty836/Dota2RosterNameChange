@@ -7,7 +7,7 @@ const supportButton = document.querySelector('#support');
 
 
 const heroes=[
-    {name:'Abaddon', attribute:'strength', carry:true, support:true, image:"abaddon.jpeg"},
+    {name:'Abaddon', attribute:'strength', carry:true, support:true, image:"image/strength/abaddon.jpeg"},
     {name:'Alchemist', attribute:'strength', carry:true, support:true, image:"alchemist.jpeg"},
     {name:'Ancient Apparition', attribute:'intelligence', carry:false, support:true, image:"Ancient_Apparition_icon.png"},
     {name:'Anti Mage', attribute:'agility', carry:true, support:false, image:"AntiMage_icon.png"},
