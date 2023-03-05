@@ -7,129 +7,129 @@ const supportButton = document.querySelector('#support');
 
 
 const heroes=[
-    {name:'Abaddon', attribute:'strength', carry:true, support:true, image:"image/strength/abaddon.jpeg"},
-    {name:'Alchemist', attribute:'strength', carry:true, support:true, image:"image/strength/alchemist.jpeg"},
-    {name:'Ancient Apparition', attribute:'intelligence', carry:false, support:true, image:"image/intelligence/Ancient_Apparition_icon.png"},
-    {name:'Anti Mage', attribute:'agility', carry:true, support:false, image:"image/agility/AntiMage_icon.png"},
-    {name:'Arc Warden', attribute:'agility', carry:true, support:false, image:"image/agility/Arc_Warden_icon.png"},
-    {name:'Axe', attribute:'strength', carry:true, support:false, image:"image/strength/axe.png"},
-    {name:'Bane', attribute:'intelligence', carry:false, support:true, image:"image/intelligence/Bane_icon.png"},
-    {name:'Batrider', attribute:'intelligence', carry:false, support:false, image:"image/intelligence/Batrider_icon.png"},
-    {name:'Beastmaster', attribute:'strength', carry:false, support:false, image:"image/strength/Beastmaster.jpeg"},
-    {name:'Bloodseeker', attribute:'agility', carry:true, support:false, image:"image/agility/Bloodseeker_icon.png"},
-    {name:'Bounty Hunter', attribute:'agility', carry:false, support:false, image:"image/agility/Bounty_Hunter_icon.png"},
-    {name:'Brewmaster', attribute:'strength', carry:true, support:false, image:"image/strength/Brewmaster.png"},
-    {name:'Bristeback', attribute:'strength', carry:true, support:false, image:"image/strength/bristleback.png"},
-    {name:'Broodmother', attribute:'agility', carry:true, support:false, image:"image/agility/Broodmother_icon.png"},
-    {name:'Centaur Warrunner', attribute:'strength', carry:false, support:false, image:"image/strength/Centaur_Warrunner_icon.png"},
-    {name:'Chaos Knight', attribute:'strength', carry:true, support:false, image:"image/strength/chaosknight.png"},
-    {name:'Chen', attribute:'intelligence', carry:false, support:true, image:"image/intelligence/Chen_icon.png"},
-    {name:'Clinkz', attribute:'agility', carry:true, support:false, image:"image/agility/Clinkz_icon.png"},
-    {name:'Clockwerk', attribute:'strength', carry:false, carry:false, image:"image/strength/clockwerk.jpeg"},
-    {name:'Crystal Maiden', attribute:'intelligence', carry:false, support:true, image:"image/intelligence/Crystal_Maiden_icon.png"},
-    {name:'Dark Seer', attribute:'intelligence', carry:false, support:false, image:"image/intelligence/Dark_Seer_icon.png"},
-    {name:'Dark Willow', attribute:'intelligence', carry:false, support:true, image:"image/intelligence/Dark_Willow_icon.png"},
-    {name:'Dawnbreaker', attribute:'strength', carry:true, support:false, image:"image/strength/dawnbreaker.png"},
-    {name:'Dazzle', attribute:'intelligence', carry:false, support:true, image:"image/intelligence/Dazzle_icon.png"},
-    {name:'Death Prophet', attribute:'intelligence', carry:true, support:false, image:"image/intelligence/Death_Prophet_icon.png"},
-    {name:'Disruptor', attribute:'intelligence', carry:false, support:true, image:"image/intelligence/Disruptor_icon.png"},
-    {name:'Doom', attribute:'strength', carry:true, support:false, image:"image/strength/doom.png"},
-    {name:'Dragon Knight', attribute:'strength', carry:true, support:false, image:"image/strength/dragonknight.png"},
-    {name:'Drow Ranger', attribute:'agility', carry:true, support:false, image:"image/agility/Drow_Ranger_icon.png"},
-    {name:'Earth Spirit', attribute:'strength', carry:false, support:false, image:"image/strength/earthspirit.png"},
-    {name:'Earth Shaker', attribute:'strength', carry:false, support:true, image:"image/strength/earthshaker.png"},
-    {name:'Elder Titan', attribute:'strength', carry:false, support:false, image:"image/strength/eldertitan.png"},
-    {name:'Ember Spirit', attribute:'agility', carry:true, support:false, image:"image/agility/Ember_Spirit_icon.png"},
-    {name:'Enchantress', attribute:'intelligence', carry:false, support:true, image:"image/intelligence/Enchantress_icon.png"},
-    {name:'Enigma', attribute:'intelligence', carry:false, support:false, image:"image/intelligence/Enigma_icon.png"},
-    {name:'Faceless Void', attribute:'agility', carry:true, support:false, image:"image/agility/Faceless_Void_icon.png"},
-    {name:'Grimstroke', attribute:'intelligence', carry:false, support:true, image:"image/intelligence/Grimstroke_icon.png"},
-    {name:'Gyrocopter', attribute:'agility', carry:true, support:false, image:"image/agility/Gyrocopter_icon.png"},
-    {name:'Hoodwink', attribute:'agility', carry:false, support:true, image:"image/agility/hoodwink.jpeg"},
-    {name:'Huskar', attribute:'strength', carry:true, support:false, image:"image/strength/huskar.png"},
-    {name:'Invoker', attribute:'intelligence', carry:true, support:false, image:"image/intelligence/Invoker_icon.png"},
-    {name:'Io', attribute:'strength', carry:false, support:true, image:"image/strength/io.png"},
-    {name:'Jakiro', attribute:'intelligence', carry:false, support:true, image:"image/intelligence/Jakiro_icon.png"},
-    {name:'Juggernaut', attribute:'agility', carry:true, support:false, image:"image/agility/Juggernaut_icon.png"},
-    {name:'Keeper of the Light', attribute:'intelligence', carry:false, support:true, image:"image/intelligence/Keeper_of_the_Light_icon.png"},
-    {name:'Kunkka', attribute:'strength', carry:true, support:true, image:"image/strength/kunkka.png"},
-    {name:'Legion Commander', attribute:'strength', carry:true, support:false, image:"image/strength/Legion_Commander_icon.png"},
-    {name:'Leshrac', attribute:'intelligence', carry:true, support:true, image:"image/intelligence/Leshrac_icon.png"},
-    {name:'Lich', attribute:'intelligence', carry:false, support:true, image:"image/intelligence/Lich_icon.png"},
-    {name:'Lifestealer', attribute:'strength', carry:true, support:false, image:"image/strength/Lifestealer_icon.png"},
-    {name:'Lina', attribute:'intelligence', carry:true, support:true, image:"image/intelligence/Lina_icon.png"},
-    {name:'Lion', attribute:'intelligence', carry:false, support:true, image:"image/intelligence/Lion_icon.png"},
-    {name:'Lone Druid', attribute:'agility', carry:true, support:false, image:"image/agility/Lone_Druid_icon.png"},
-    {name:'Luna', attribute:'agility', carry:true, support:false, image:"image/agility/Luna_icon.png"},
-    {name:'Lycan', attribute:'strength', carry:true, support:false, image:"image/strength/Lycan_icon.png"},
-    {name:'Magnus', attribute:'strength', carry:false, support:false, image:"image/strength/Magnus_icon.png"},
-    {name:'Marci', attribute:'strength', carry:true, support:true, image:"image/strength/marci.png"},
-    {name:'Mars', attribute:'strength', carry:true, support:false, image:"image/strength/Mars_icon.png"},
-    {name:'Medusa', attribute:'agility', carry:true, support:false, image:"image/agility/Medusa_icon.png"},
-    {name:'Meepo', attribute:'agility', carry:true, support:false, image:"image/agility/Meepo_icon.png"},
-    {name:'Mirana', attribute:'agility', carry:true, support:true, image:"image/agility/Mirana_icon.png"},
-    {name:'Monkey King', attribute:'agility', carry:true, support:false, image:"image/agility/monkey_king.jpeg"},
-    {name:'Morphling', attribute:'agility', carry:true, support:false, image:"image/agility/Morphling_icon.png"},
-    {name:'Naga Siren', attribute:'agility', carry:true, support:true, image:"image/agility/Naga_Siren_icon.png"},
-    {name:'Nature\'s Prophet', attribute:'intelligence', carry:true, support:false, image:"image/intelligence/natures.png"},
-    {name:'Necrophos', attribute:'intelligence', carry:true, support:false, image:"image/intelligence/Necrophos_icon.png"},
-    {name:'Night Stalker', attribute:'strength', carry:true, support:false, image:"image/strength/Night_Stalker_icon.png"},
-    {name:'Nyx Assassin', attribute:'agility', carry:false, support:false, image:"image/agility/Nyx_Assassin_icon.png"},
-    {name:'Ogre Magi', attribute:'intelligence', carry:false, support:true, image:"image/intelligence/Ogre_Magi_icon.png"},
-    {name:'Omniknight', attribute:'strength', carry:false, support:true, image:"image/strength/Omniknight_icon.png"},
-    {name:'Oracle', attribute:'intelligence', carry:false, support:true, image:"image/intelligence/Oracle_icon.png"},
-    {name:'Outerworld Destroyer', attribute:'intelligence', carry:true, support:false, image:"image/intelligence/Outworld_Destroyer_icon.png"},
-    {name:'Pangolier', attribute:'agility', carry:true, support:false, image:"image/agility/Pangolier_icon.png"},
-    {name:'Phantom Assassin', attribute:'agility', carry:true, support:false, image:"image/agility/Phantom_Assassin_icon.png"},
-    {name:'Phantom Lancer', attribute:'agility', carry:true, support:false, image:"image/agility/Phantom_Lancer_icon.png"},
-    {name:'Pheonix', attribute:'strength', carry:false, support:true, image:"image/strength/benedict-barone-katoglou-phoenix-low.jpeg"},
-    {name:'Primal Beast', attribute:'strength', carry:false, support:false, image:"image/strength/primalBeast.jpg"},
-    {name:'Puck', attribute:'intelligence', carry:false, support:false, image:"image/intelligence/Puck_icon.png"},
-    {name:'Pudge', attribute:'strength', carry:false, support:false, image:"image/strength/Pudge_icon.png"},
-    {name:'Pugna', attribute:'intelligence', carry:false, support:false, image:"image/intelligence/Pugna_icon.png"},
-    {name:'Queen of Pain', attribute:'intelligence', carry:true, support:false, image:"image/intelligence/Queen_of_Pain_icon.png"},
-    {name:'Razor', attribute:'agility', carry:true, support:false, image:"image/agility/Razor_icon.png"},
-    {name:'Riki', attribute:'agility', carry:true, support:false, image:"image/agility/Riki_icon.png"},
-    {name:'Rubick', attribute:'intelligence', carry:false, support:true, image:"image/intelligence/Rubick_icon.png"},
-    {name:'Sand King', attribute:'strength', carry:false, support:true, image:"image/strength/Sand_King_icon.png"},
-    {name:'Shadow Demon', attribute:'intelligence', carry:false, support:true, image:"image/intelligence/Shadow_Demon_icon.png"},
-    {name:'Shadow Fiend', attribute:'agility', carry:true, support:false, image:"image/agility/Shadow_Fiend_icon.png"},
-    {name:'Shadow Shaman', attribute:'intelligence', carry:false, support:true, image:"image/intelligence/Shadow_Shaman_icon.png"},
-    {name:'Silencer', attribute:'intelligence', carry:true, support:true, image:"image/intelligence/Silencer_icon.png"},
-    {name:'Skywrath Mage', attribute:'intelligence', carry:false, support:true, image:"image/intelligence/Skywrath_Mage_icon.png"},
-    {name:'Slardar', attribute:'strength', carry:true, support:false, image:"image/strength/Slardar_icon.png"},
-    {name:'Slark', attribute:'agility', carry:true, support:false, image:"image/agility/Slark_icon.png"},
-    {name:'Snapfire', attribute:'strength', carry:false, support:true, image:"image/strength/Snapfire_icon.png"},
-    {name:'Sniper', attribute:'agility', carry:true, support:false, image:"image/agility/Sniper_icon.png"},
-    {name:'Spectre', attribute:'agility', carry:true, support:false, image:"image/agility/Spectre_icon.png"},
-    {name:'Spirit Breaker', attribute:'strength', carry:true, support:false, image:"image/strength/Spirit_Breaker_icon.png"},
-    {name:'Storm Spirit', attribute:'intelligence', carry:true, support:false, image:"image/intelligence/Storm_Spirit_icon.png"},
-    {name:'Sven', attribute:'strength', carry:true, support:false, image:"image/strength/Sven_icon.png"},
-    {name:'Techies', attribute:'intelligence', carry:false, support:false, image:"image/intelligence/Techies_icon.png"},
-    {name:'Templar Assassin', attribute:'agility', carry:true, support:false, image:"image/agility/Templar_Assassin_icon.png"},
-    {name:'Terrorblade', attribute:'agility', carry:true, support:false, image:"image/agility/Terrorblade_icon.png"},
-    {name:'Tidehunter', attribute:'strength', carry:true, support:false, image:"image/strength/Tidehunter_icon.png"},
-    {name:'Timbersaw', attribute:'strength', carry:false, support:false, image:"image/strength/Timbersaw_icon.png"},
-    {name:'Tinker', attribute:'intelligence', carry:true, support:false, image:"image/intelligence/Tinker_icon.png"},
-    {name:'Tiny', attribute:'strength', carry:true, support:false, image:"image/strength/Tiny_icon.png"},
-    {name:'Treant Protector', attribute:'strength', carry:false, support:true, image:"image/strength/Treant_Protector_icon.png"},
-    {name:'Troll Warlord', attribute:'agility', carry:true, support:false, image:"image/agility/Troll_Warlord_icon.png"},
-    {name:'Tusk', attribute:'strength', carry:false, support:false, image:"image/strength/Tusk_icon.png"},
-    {name:'Underlord', attribute:'strength', carry:false, support:true, image:"image/strength/Underlord_icon.png"},
-    {name:'Undying', attribute:'strength', carry:false, support:true, image:"image/strength/Undying_icon.png"},
-    {name:'Ursa', attribute:'agility', carry:true, support:false, image:"image/agility/Ursa_icon.png"},
-    {name:'Vengeful Spirit', attribute:'agility', carry:false, support:true, image:"image/agility/Vengeful_Spirit_icon.png"},
-    {name:'Venomancer', attribute:'agility', carry:false, support:true, image:"image/agility/Venomancer_icon.png"},
-    {name:'Viper', attribute:'agility', carry:true, support:false, image:"image/agility/Viper_icon.png"},
-    {name:'Visage', attribute:'intelligence', carry:false, support:true, image:"image/intelligence/Visage_icon.png"},
-    {name:'Void Spirit', attribute:'intelligence', carry:true, support:false, image:"image/intelligence/Void_Spirit_icon.png"},
-    {name:'Warlock', attribute:'intelligence', carry:false, support:true, image:"image/intelligence/Warlock_icon.png"},
-    {name:'Weaver', attribute:'agility', carry:true, support:false, image:"image/agility/Weaver_icon.png"},
-    {name:'Windranger', attribute:'intelligence', carry:true, support:true, image:"image/intelligence/Windranger_icon.png"},
-    {name:'Winter Wyvern', attribute:'intelligence', carry:false, support:true, image:"image/intelligence/Winter_Wyvern_icon.png"},
-    {name:'Witch Doctor', attribute:'intelligence', carry:false, support:true, image:"image/intelligence/Witch_Doctor_icon.png"},
-    {name:'Wraith King', attribute:'strength', carry:true, support:true, image:"image/strength/Wraith_King_icon.png"},
-    {name:'Zeus', attribute:'intelligence', carry:true, support:false, image:"image/intelligence/Zeus_icon.png"},
+    {name:'Abaddon', attribute:'strength', carry:true, support:true, image:"abaddon.jpeg"},
+    {name:'Alchemist', attribute:'strength', carry:true, support:true, image:"alchemist.jpeg"},
+    {name:'Ancient Apparition', attribute:'intelligence', carry:false, support:true, image:"Ancient_Apparition_icon.png"},
+    {name:'Anti Mage', attribute:'agility', carry:true, support:false, image:"AntiMage_icon.png"},
+    {name:'Arc Warden', attribute:'agility', carry:true, support:false, image:"Arc_Warden_icon.png"},
+    {name:'Axe', attribute:'strength', carry:true, support:false, image:"axe.png"},
+    {name:'Bane', attribute:'intelligence', carry:false, support:true, image:"Bane_icon.png"},
+    {name:'Batrider', attribute:'intelligence', carry:false, support:false, image:"Batrider_icon.png"},
+    {name:'Beastmaster', attribute:'strength', carry:false, support:false, image:"Beastmaster.jpeg"},
+    {name:'Bloodseeker', attribute:'agility', carry:true, support:false, image:"Bloodseeker_icon.png"},
+    {name:'Bounty Hunter', attribute:'agility', carry:false, support:false, image:"Bounty_Hunter_icon.png"},
+    {name:'Brewmaster', attribute:'strength', carry:true, support:false, image:"Brewmaster.png"},
+    {name:'Bristeback', attribute:'strength', carry:true, support:false, image:"bristleback.png"},
+    {name:'Broodmother', attribute:'agility', carry:true, support:false, image:"Broodmother_icon.png"},
+    {name:'Centaur Warrunner', attribute:'strength', carry:false, support:false, image:"Centaur_Warrunner_icon.png"},
+    {name:'Chaos Knight', attribute:'strength', carry:true, support:false, image:"chaosknight.png"},
+    {name:'Chen', attribute:'intelligence', carry:false, support:true, image:"Chen_icon.png"},
+    {name:'Clinkz', attribute:'agility', carry:true, support:false, image:"Clinkz_icon.png"},
+    {name:'Clockwerk', attribute:'strength', carry:false, carry:false, image:"clockwerk.jpeg"},
+    {name:'Crystal Maiden', attribute:'intelligence', carry:false, support:true, image:"Crystal_Maiden_icon.png"},
+    {name:'Dark Seer', attribute:'intelligence', carry:false, support:false, image:"Dark_Seer_icon.png"},
+    {name:'Dark Willow', attribute:'intelligence', carry:false, support:true, image:"Dark_Willow_icon.png"},
+    {name:'Dawnbreaker', attribute:'strength', carry:true, support:false, image:"dawnbreaker.png"},
+    {name:'Dazzle', attribute:'intelligence', carry:false, support:true, image:"Dazzle_icon.png"},
+    {name:'Death Prophet', attribute:'intelligence', carry:true, support:false, image:"Death_Prophet_icon.png"},
+    {name:'Disruptor', attribute:'intelligence', carry:false, support:true, image:"Disruptor_icon.png"},
+    {name:'Doom', attribute:'strength', carry:true, support:false, image:"doom.png"},
+    {name:'Dragon Knight', attribute:'strength', carry:true, support:false, image:"dragonknight.png"},
+    {name:'Drow Ranger', attribute:'agility', carry:true, support:false, image:"Drow_Ranger_icon.png"},
+    {name:'Earth Spirit', attribute:'strength', carry:false, support:false, image:"earthspirit.png"},
+    {name:'Earth Shaker', attribute:'strength', carry:false, support:true, image:"earthshaker.png"},
+    {name:'Elder Titan', attribute:'strength', carry:false, support:false, image:"eldertitan.png"},
+    {name:'Ember Spirit', attribute:'agility', carry:true, support:false, image:"Ember_Spirit_icon.png"},
+    {name:'Enchantress', attribute:'intelligence', carry:false, support:true, image:"Enchantress_icon.png"},
+    {name:'Enigma', attribute:'intelligence', carry:false, support:false, image:"Enigma_icon.png"},
+    {name:'Faceless Void', attribute:'agility', carry:true, support:false, image:"Faceless_Void_icon.png"},
+    {name:'Grimstroke', attribute:'intelligence', carry:false, support:true, image:"Grimstroke_icon.png"},
+    {name:'Gyrocopter', attribute:'agility', carry:true, support:false, image:"Gyrocopter_icon.png"},
+    {name:'Hoodwink', attribute:'agility', carry:false, support:true, image:"hoodwink.jpeg"},
+    {name:'Huskar', attribute:'strength', carry:true, support:false, image:"huskar.png"},
+    {name:'Invoker', attribute:'intelligence', carry:true, support:false, image:"Invoker_icon.png"},
+    {name:'Io', attribute:'strength', carry:false, support:true, image:"io.png"},
+    {name:'Jakiro', attribute:'intelligence', carry:false, support:true, image:"Jakiro_icon.png"},
+    {name:'Juggernaut', attribute:'agility', carry:true, support:false, image:"Juggernaut_icon.png"},
+    {name:'Keeper of the Light', attribute:'intelligence', carry:false, support:true, image:"Keeper_of_the_Light_icon.png"},
+    {name:'Kunkka', attribute:'strength', carry:true, support:true, image:"kunkka.png"},
+    {name:'Legion Commander', attribute:'strength', carry:true, support:false, image:"Legion_Commander_icon.png"},
+    {name:'Leshrac', attribute:'intelligence', carry:true, support:true, image:"Leshrac_icon.png"},
+    {name:'Lich', attribute:'intelligence', carry:false, support:true, image:"Lich_icon.png"},
+    {name:'Lifestealer', attribute:'strength', carry:true, support:false, image:"Lifestealer_icon.png"},
+    {name:'Lina', attribute:'intelligence', carry:true, support:true, image:"Lina_icon.png"},
+    {name:'Lion', attribute:'intelligence', carry:false, support:true, image:"Lion_icon.png"},
+    {name:'Lone Druid', attribute:'agility', carry:true, support:false, image:"Lone_Druid_icon.png"},
+    {name:'Luna', attribute:'agility', carry:true, support:false, image:"Luna_icon.png"},
+    {name:'Lycan', attribute:'strength', carry:true, support:false, image:"Lycan_icon.png"},
+    {name:'Magnus', attribute:'strength', carry:false, support:false, image:"Magnus_icon.png"},
+    {name:'Marci', attribute:'strength', carry:true, support:true, image:"marci.png"},
+    {name:'Mars', attribute:'strength', carry:true, support:false, image:"Mars_icon.png"},
+    {name:'Medusa', attribute:'agility', carry:true, support:false, image:"Medusa_icon.png"},
+    {name:'Meepo', attribute:'agility', carry:true, support:false, image:"Meepo_icon.png"},
+    {name:'Mirana', attribute:'agility', carry:true, support:true, image:"Mirana_icon.png"},
+    {name:'Monkey King', attribute:'agility', carry:true, support:false, image:"monkey_king.jpeg"},
+    {name:'Morphling', attribute:'agility', carry:true, support:false, image:"Morphling_icon.png"},
+    {name:'Naga Siren', attribute:'agility', carry:true, support:true, image:"Naga_Siren_icon.png"},
+    {name:'Nature\'s Prophet', attribute:'intelligence', carry:true, support:false, image:"natures.png"},
+    {name:'Necrophos', attribute:'intelligence', carry:true, support:false, image:"Necrophos_icon.png"},
+    {name:'Night Stalker', attribute:'strength', carry:true, support:false, image:"Night_Stalker_icon.png"},
+    {name:'Nyx Assassin', attribute:'agility', carry:false, support:false, image:"Nyx_Assassin_icon.png"},
+    {name:'Ogre Magi', attribute:'intelligence', carry:false, support:true, image:"Ogre_Magi_icon.png"},
+    {name:'Omniknight', attribute:'strength', carry:false, support:true, image:"Omniknight_icon.png"},
+    {name:'Oracle', attribute:'intelligence', carry:false, support:true, image:"Oracle_icon.png"},
+    {name:'Outerworld Destroyer', attribute:'intelligence', carry:true, support:false, image:"Outworld_Destroyer_icon.png"},
+    {name:'Pangolier', attribute:'agility', carry:true, support:false, image:"Pangolier_icon.png"},
+    {name:'Phantom Assassin', attribute:'agility', carry:true, support:false, image:"Phantom_Assassin_icon.png"},
+    {name:'Phantom Lancer', attribute:'agility', carry:true, support:false, image:"Phantom_Lancer_icon.png"},
+    {name:'Pheonix', attribute:'strength', carry:false, support:true, image:"benedict-barone-katoglou-phoenix-low.jpeg"},
+    {name:'Primal Beast', attribute:'strength', carry:false, support:false, image:"primalBeast.jpg"},
+    {name:'Puck', attribute:'intelligence', carry:false, support:false, image:"Puck_icon.png"},
+    {name:'Pudge', attribute:'strength', carry:false, support:false, image:"Pudge_icon.png"},
+    {name:'Pugna', attribute:'intelligence', carry:false, support:false, image:"Pugna_icon.png"},
+    {name:'Queen of Pain', attribute:'intelligence', carry:true, support:false, image:"Queen_of_Pain_icon.png"},
+    {name:'Razor', attribute:'agility', carry:true, support:false, image:"Razor_icon.png"},
+    {name:'Riki', attribute:'agility', carry:true, support:false, image:"Riki_icon.png"},
+    {name:'Rubick', attribute:'intelligence', carry:false, support:true, image:"Rubick_icon.png"},
+    {name:'Sand King', attribute:'strength', carry:false, support:true, image:"Sand_King_icon.png"},
+    {name:'Shadow Demon', attribute:'intelligence', carry:false, support:true, image:"Shadow_Demon_icon.png"},
+    {name:'Shadow Fiend', attribute:'agility', carry:true, support:false, image:"Shadow_Fiend_icon.png"},
+    {name:'Shadow Shaman', attribute:'intelligence', carry:false, support:true, image:"Shadow_Shaman_icon.png"},
+    {name:'Silencer', attribute:'intelligence', carry:true, support:true, image:"Silencer_icon.png"},
+    {name:'Skywrath Mage', attribute:'intelligence', carry:false, support:true, image:"Skywrath_Mage_icon.png"},
+    {name:'Slardar', attribute:'strength', carry:true, support:false, image:"Slardar_icon.png"},
+    {name:'Slark', attribute:'agility', carry:true, support:false, image:"Slark_icon.png"},
+    {name:'Snapfire', attribute:'strength', carry:false, support:true, image:"Snapfire_icon.png"},
+    {name:'Sniper', attribute:'agility', carry:true, support:false, image:"Sniper_icon.png"},
+    {name:'Spectre', attribute:'agility', carry:true, support:false, image:"Spectre_icon.png"},
+    {name:'Spirit Breaker', attribute:'strength', carry:true, support:false, image:"Spirit_Breaker_icon.png"},
+    {name:'Storm Spirit', attribute:'intelligence', carry:true, support:false, image:"Storm_Spirit_icon.png"},
+    {name:'Sven', attribute:'strength', carry:true, support:false, image:"Sven_icon.png"},
+    {name:'Techies', attribute:'intelligence', carry:false, support:false, image:"Techies_icon.png"},
+    {name:'Templar Assassin', attribute:'agility', carry:true, support:false, image:"Templar_Assassin_icon.png"},
+    {name:'Terrorblade', attribute:'agility', carry:true, support:false, image:"Terrorblade_icon.png"},
+    {name:'Tidehunter', attribute:'strength', carry:true, support:false, image:"Tidehunter_icon.png"},
+    {name:'Timbersaw', attribute:'strength', carry:false, support:false, image:"Timbersaw_icon.png"},
+    {name:'Tinker', attribute:'intelligence', carry:true, support:false, image:"Tinker_icon.png"},
+    {name:'Tiny', attribute:'strength', carry:true, support:false, image:"Tiny_icon.png"},
+    {name:'Treant Protector', attribute:'strength', carry:false, support:true, image:"Treant_Protector_icon.png"},
+    {name:'Troll Warlord', attribute:'agility', carry:true, support:false, image:"Troll_Warlord_icon.png"},
+    {name:'Tusk', attribute:'strength', carry:false, support:false, image:"Tusk_icon.png"},
+    {name:'Underlord', attribute:'strength', carry:false, support:true, image:"Underlord_icon.png"},
+    {name:'Undying', attribute:'strength', carry:false, support:true, image:"Undying_icon.png"},
+    {name:'Ursa', attribute:'agility', carry:true, support:false, image:"Ursa_icon.png"},
+    {name:'Vengeful Spirit', attribute:'agility', carry:false, support:true, image:"Vengeful_Spirit_icon.png"},
+    {name:'Venomancer', attribute:'agility', carry:false, support:true, image:"Venomancer_icon.png"},
+    {name:'Viper', attribute:'agility', carry:true, support:false, image:"Viper_icon.png"},
+    {name:'Visage', attribute:'intelligence', carry:false, support:true, image:"Visage_icon.png"},
+    {name:'Void Spirit', attribute:'intelligence', carry:true, support:false, image:"Void_Spirit_icon.png"},
+    {name:'Warlock', attribute:'intelligence', carry:false, support:true, image:"Warlock_icon.png"},
+    {name:'Weaver', attribute:'agility', carry:true, support:false, image:"Weaver_icon.png"},
+    {name:'Windranger', attribute:'intelligence', carry:true, support:true, image:"Windranger_icon.png"},
+    {name:'Winter Wyvern', attribute:'intelligence', carry:false, support:true, image:"Winter_Wyvern_icon.png"},
+    {name:'Witch Doctor', attribute:'intelligence', carry:false, support:true, image:"Witch_Doctor_icon.png"},
+    {name:'Wraith King', attribute:'strength', carry:true, support:true, image:"Wraith_King_icon.png"},
+    {name:'Zeus', attribute:'intelligence', carry:true, support:false, image:"Zeus_icon.png"},
 ];
 
 
@@ -809,45 +809,40 @@ function supportToggle(e){
 
 function nameChange(){
     /////////////strength
-    alchemistImage.src="image/strength alt/Shrek.jpeg";
-    axeImage.src="image/strength alt/ogceb2.jpg";
-    brewmasterImage.src="image/strength alt/kungfupanda.jpeg";
-    centaurImage.src="image/strength alt/terry.png";
-    chaosKnightImage.src="image/strength alt/butters.jpeg";
-    dragonKnightImage.src="image/strength alt/Dota-anime-Dragons-Blood-Dragon-Knight-Netflix.jpeg";
-    earthSpiritImage.src="image/strength alt/irongiant.jpeg";
-    earthshakerImage.src="image/strength alt/chewy.jpeg";
-    ioImage.src="image/strength alt/testicle.png";       /////////////////----------------NSFW
-    legionImage.src="image/strength alt/pharah.png";
-    magnusImage.src="image/strength alt/Manny.png";
-    marciImage.src="image/strength alt/rileyreid2.jpeg";        /////////////////----------------NSFW
-    omniknightImage.src="image/strength alt/obi-wan.jpeg";
-    pudgeImage.src="image/strength alt/roadhog.jpeg";
-    tinyImage.src="image/strength alt/rock.jpeg";
-    treantImage.src="image/strength alt/groot.png";
-    undyingImage.src="image/strength alt/Matthew.png";          /////////////////----------------NSFW
+    alchemistImage.src="Shrek.jpeg";
+    axeImage.src="ogceb2.jpg";
+    brewmasterImage.src="kungfupanda.jpeg";
+    centaurImage.src="terry.png";
+    chaosKnightImage.src="butters.jpeg";
+    dragonKnightImage.src="Dota-anime-Dragons-Blood-Dragon-Knight-Netflix.jpeg";
+    earthSpiritImage.src="irongiant.jpeg";
+    earthshakerImage.src="chewy.jpeg";
+    legionImage.src="pharah.png";
+    magnusImage.src="Manny.png";
+    omniknightImage.src="obi-wan.jpeg";
+    pudgeImage.src="roadhog.jpeg";
+    tinyImage.src="rock.jpeg";
+    treantImage.src="groot.png";
     //////////agility
-    bountyHunterImage.src="image/agility alt/meowth.jpeg";
-    hoodwinkImage.src="image/agility alt/hopps.png";
-    juggernautImage.src="image/agility alt/hiroyuki_sanada.jpg";
-    loneDruidImage.src="image/agility alt/liamneeson.jpeg";
-    meepoImage.src="image/agility alt/steve_buscemi.jpeg";
-    nagaSirenImage.src="image/agility alt/ashoka_tanp.jpeg";
-    pangolierImage.src="image/agility alt/pussnboots.jpeg";
-    phantomLancerImage.src="image/agility alt/Tony.png";
-    sniperImage.src="image/agility alt/Torbjorn.png";
+    bountyHunterImage.src="meowth.jpeg";
+    hoodwinkImage.src="hopps.png";
+    juggernautImage.src="hiroyuki_sanada.jpg";
+    loneDruidImage.src="liamneeson.jpeg";
+    meepoImage.src="steve_buscemi.jpeg";
+    nagaSirenImage.src="ashoka_tanp.jpeg";
+    pangolierImage.src="pussnboots.jpeg";
+    phantomLancerImage.src="Tony.png";
+    sniperImage.src="Torbjorn.png";
     /////////////intelligence
-    chenImage.src="image/intelligence alt/li_shang_mulan.png";
-    crystalMaidenImage.src="image/intelligence alt/elsa.jpeg";
-    enchantressImage.src="image/intelligence alt/bambi.jpeg";
-    invokerImage.src="image/intelligence alt/lucius.jpeg";
-    keeperOfTheLightImage.src="image/intelligence alt/merlin.jpeg";
-    ogreMagiImage.src="image/intelligence alt/majinbuu.jpeg";
-    shadowShamanImage.src="image/intelligence alt/scorpion.png";
-    skywrathMageImage.src="image/intelligence alt/Shaiapouf.png";
-    stormSpiritImage.src="image/intelligence alt/genie.jpeg";
-    techiesImage.src="image/intelligence alt/Osama_bin_Laden_portrait.jpeg";  /////////////////----------------NSFW
-
+    chenImage.src="li_shang_mulan.png";
+    crystalMaidenImage.src="elsa.jpeg";
+    enchantressImage.src="bambi.jpeg";
+    invokerImage.src="lucius.jpeg";
+    keeperOfTheLightImage.src="merlin.jpeg";
+    ogreMagiImage.src="majinbuu.jpeg";
+    shadowShamanImage.src="scorpion.png";
+    skywrathMageImage.src="Shaiapouf.png";
+    stormSpiritImage.src="genie.jpeg";
 }
 function nameRevert(){
     ////////////strength
@@ -859,15 +854,13 @@ function nameRevert(){
     dragonKnightImage.src=strengthHeroes[11].image;
     earthSpiritImage.src=strengthHeroes[12].image;
     earthshakerImage.src=strengthHeroes[13].image;
-    ioImage.src=strengthHeroes[16].image;       /////////////////----------------NSFW
     legionImage.src=strengthHeroes[18].image;
     magnusImage.src=strengthHeroes[21].image;    
-    marciImage.src=strengthHeroes[22].image;        /////////////////----------------NSFW
     omniknightImage.src=strengthHeroes[25].image;
     pudgeImage.src=strengthHeroes[28].image;
     tinyImage.src=strengthHeroes[36].image;
     treantImage.src=strengthHeroes[37].image;
-    undyingImage.src=strengthHeroes[40].image;          /////////////////----------------NSFW
+    
     /////////////agility
     bountyHunterImage.src=agilityHeroes[3].image;
     hoodwinkImage.src=agilityHeroes[10].image;
@@ -878,6 +871,7 @@ function nameRevert(){
     pangolierImage.src=agilityHeroes[21].image;
     phantomLancerImage.src=agilityHeroes[23].image;
     sniperImage.src=agilityHeroes[28].image;
+    
     //intelligence
     chenImage.src=intelligenceHeroes[3].image;
     crystalMaidenImage.src=intelligenceHeroes[4].image;
@@ -888,8 +882,6 @@ function nameRevert(){
     shadowShamanImage.src=intelligenceHeroes[30].image;
     skywrathMageImage.src=intelligenceHeroes[32].image;
     stormSpiritImage.src=intelligenceHeroes[33].image;
-    techiesImage.src=intelligenceHeroes[34].image;   /////////////////----------------NSFW
-
 }
 
 onSwitch.addEventListener('click',nameChange);
