@@ -809,7 +809,7 @@ function supportToggle(e){
 
 function nameChange(){
     /////////////strength
-    alchemistImage.src="Shrek.jpeg";
+    alchemistImage.src="shrek.jpeg";
     axeImage.src="ogceb2.jpg";
     brewmasterImage.src="kungfupanda.jpeg";
     centaurImage.src="terry.png";
