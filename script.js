@@ -826,7 +826,6 @@ function nameChange(){
     //////////agility
     bountyHunterImage.src="meowth.jpeg";
     hoodwinkImage.src="hopps.png";
-    juggernautImage.src="hiroyuki_sanada.jpg";
     loneDruidImage.src="liamneeson.jpeg";
     meepoImage.src="steve_buscemi.jpeg";
     nagaSirenImage.src="ashoka_tanp.jpeg";
@@ -864,7 +863,6 @@ function nameRevert(){
     /////////////agility
     bountyHunterImage.src=agilityHeroes[3].image;
     hoodwinkImage.src=agilityHeroes[10].image;
-    juggernautImage.src=agilityHeroes[11].image;
     loneDruidImage.src=agilityHeroes[12].image;
     meepoImage.src=agilityHeroes[15].image;
     nagaSirenImage.src=agilityHeroes[19].image;
